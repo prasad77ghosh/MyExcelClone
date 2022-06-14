@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/*-------------------header-------------------------*/
+.header-action-cont {
+  height: 3rem;
+  background: #247937;
+  display: flex;
+  align-items: flex-end;
+  color: #efefef;
+  border: 0.2px solid rgb(174, 174, 174);
+}
+
+.page-action {
+  margin: 0.5rem;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+.active {
+  background: #efefef;
+  color: #247937;
+  border-radius: 3px;
+}
+
+/*-------------------header-------------------------*/
+
+/*--------------------- cell-properties -------------------*/
+.cellprops-cont {
+  height: 2.5rem;
+  background-color: #efefef;
+  display: flex;
+  align-items: center;
+  padding-left: 0.8rem;
+  border: 0.5px solid lightgrey;
+}
+
+.cellprops-cont > * {
+  display: inline-block;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.cellprops-cont > select {
+  border: none;
+  border-radius: 2px;
+  outline: none;
+}
+
+.cellprops-cont > span {
+  font-size: 1.3rem;
+}
+
+.font-family-prop {
+  padding: 0.2rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.font-size-prop {
+  padding: 0.2rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.color-props {
+  position: relative;
+}
+
+
+/* to hide an element behind an icon */
+.color-props > input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+/*--------------------- cell-properties -------------------*/
+
+/*------------------------ cell-formula ----------------------*/
+.formula-action-cont {
+  height: 1.8rem;
+  background-color: #ccced3;
+  display: flex;
+  align-items: center;
+  padding-left: 0.7rem;
+}
+
+.formula-action-cont > * {
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+
+.formula-icon {
+  width: 1.1rem;
+}
+
+.address-bar {
+  width: 5rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  text-align: center;
+}
+
+.formula-bar {
+  width: calc(100vw - 5rem - 0.7rem - 0.7rem - 0.7rem - 1.1rem);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.formula-action-cont > input {
+  border: none;
+  outline: none;
+  height: 80%;
+}
+/*------------------------ cell-formula ----------------------*/
+
+/*------------------------ add-sheet-container ---------------*/
+.add-sheet-cont {
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  gap: 1rem;
+  background-color: #efefef;
+  border: 0.5px solid lightgrey;
+}
+
+.add-sheet-cont > * {
+  display: inline-block;
+}
+
+.sheet-add-icon {
+  width: 2vw;
+  cursor: pointer;
+}
+
+.sheet-folder-cont {
+  height: 80%;
+  width: calc(100% - 2vw);
+  display: flex;
+  align-items: center;
+}
+
+.sheet-folder {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/*------------------------ add-sheet-container ---------------*/
+
+/*----------------------- main-cell-container ----------------*/
+.grid-cont {
+  height: calc(100vh - 3rem - 2.5rem - 1.8rem - 2.5rem);
+  position: relative;
+  overflow: scroll;
+}
+
+.top-left-dummy-box {
+  height: 1.7rem;
+  width: 3rem;
+  position: fixed;
+  background-color: #747d8c;
+  z-index: 4;
+}
+
+.address-col-cont {
+  width: 3rem;
+  position: sticky;
+  left: 0;
+  top: 1.7rem;
+}
+
+.cells-cont {
+  position: absolute;
+  top: 0;
+  left: 3rem;
+}
+
+.address-row-cont {
+  height: 1.7rem;
+  display: flex;
+  position: sticky;
+  left: 3rem;
+  top: 0;
+  z-index: 1;
+}
+
+.address-col {
+  height: 1.7rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dfe4ea;
+  background-color: #ccced3;
+}
+.address-row {
+  height: 1.7rem;
+  width: 5rem;
+  border: 1px solid #dfe4ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccced3;
+}
+
+.cell {
+  height: 1.7rem;
+  min-width: 5rem;
+  border: 1px solid #dadfe4;
+  outline: none;
+}
+
+.row-cont {
+  display: flex;
+}
+/*----------------------- main-cell-container ----------------*/
